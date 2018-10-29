@@ -1,0 +1,107 @@
+<!doctype html>
+<!-- doctype informa ao agente do usuario do html que deve ser rederizada-->
+<html lang="pt-br">
+    <head>
+        <title>Pagina de exemplo estrura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Douglas Royer">
+        <meta name="description" content="exemplo de estrutura básica">
+        <meta name="keywords" content="htm5, tecnologia">
+        <style>
+           
+            .formLog{
+                width: 250px;
+                margin: 40px auto 0;
+            }
+            
+            #user, #pass, .btn{
+                display: block;
+                width: 100%;
+                box-sizing: border-box;
+            }
+            
+            #user:focus, #pass:focus{
+                background: red;
+            }
+            
+            
+        </style>
+    </head>
+
+    <body>   
+        <h1> FORMULARIO</h1>
+    
+        <form action="#" method="POST" class="formLog">
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <label>Email</label>
+                <input type="email" required maxlength="3" placeholder="Digite um email">
+                
+                <label>Numero de filhos</label>
+                <input type="number" min="0" max="1000" step="0.5">
+                
+                <br>
+                
+                <label>Nascimento</label>
+                <input type="date" max="2018-01-30" min="2019-01-20">
+                
+                <p>Sexo</p>
+                
+                <label>Masculino
+                <input type="radio" name="sexo" value="M" checked>
+                </label>
+                <label for="Feminino">Feminino</label>
+                <input type="radio" id="Feminino" name="sexo" value="F">
+                <hr>
+                
+                <input type="hidden" name="expira" value="2818-01-30">
+                
+                
+                
+                <label>Estado</label>
+                <select name="estado" >
+                    <option value="sp">São Paulo</option>
+                    <option value="pr">Parana/</option>
+                    <option value="SC">Santa Catarina</option>
+                </select>
+                <select name="estado" multiple>
+                    <option value="sp">opc1</option>
+                    <option value="pr">opc2/</option>
+                    <option value="pr">opc3/</option>
+                    <option value="pr">opc4/</option>
+                    <option value="pr">opc5/</option>
+                </select>
+                
+                
+            </fieldset>
+                
+            <fieldset>
+                <legend>Area de interese</legend>
+                <label>Html<input type="checkbox" name="htlm" value="html"></label>
+                <label>Css<input type="checkbox" name="css" value="css"></label>
+                <label>Js<input type="checkbox" name="js" value="js"></label>
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Mensagem</legend>
+                    <textarea name="msg" cols="50" rows="10" style="resize: none" disabled></textarea>
+                    <textarea name="contrato" cols="50" rows="10" style="resize: none" readonly>Aqui entra o texto do contrarto que presícso ser aceito</textarea>
+                
+                <input type="range" min="0" max="10" step=".2">
+                <input type="color">
+                <input type="time">
+                
+            </fieldset>
+            
+            
+            
+            <input type="submit" value="ok">
+                <input type="button" value="botao">
+            <input type="reset" value="reset">
+            
+        </form>
+        
+    </body>
+
+</html>

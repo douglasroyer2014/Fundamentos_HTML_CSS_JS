@@ -1,0 +1,94 @@
+<!doctype html>
+<!-- doctype informa ao agente do usuario do html que deve ser rederizada-->
+<html lang="pt-br">
+    <head>
+        <title>Pagina de exemplo estrura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Douglas Royer">
+        <meta name="description" content="exemplo de estrutura básica">
+        <meta name="keywords" content="htm5, tecnologia">
+        
+        <style>
+            
+            body{
+                font-family: sans-serif;
+            }
+            
+            table{
+                border-collapse: collapse;
+                margin: auto;
+                width: 80%;
+                background: blue;
+            }
+            
+            th{
+                background: red;
+                border: 2px solid yellow;
+                padding: 15px;
+            }
+            
+            td{
+                border: 2px solid black;
+                text-align: center;
+                padding: 10px;
+            }
+            
+        </style>
+    </head>
+
+    <body>   
+    
+        <table>
+            <caption>Tabela de preços de cursos</caption>
+            <thead>
+                <tr>
+                    <th>Área</th>
+                    <th>Curso</th>
+                    <th>Investimento</th>
+                </tr>
+            </thead>
+        
+            <tfoot>
+                <tr>
+                    <td colspan="3">Valores sujeito a alterações sem previo aviso</td>
+                </tr>
+                
+            </tfoot>
+            
+            <tbody>
+            
+                <tr>
+                    <td rowspan="3">Design</td>
+                    <td>InDesign</td>
+                    <td>R$ 1.000</td>
+                </tr>
+                <tr>
+                    <td>Photoshop</td>
+                    <td>R$ 1.000</td>
+                </tr>
+                <tr>
+                    <td>Ilustrator</td>
+                    <td>R$ 1.000</td>
+                </tr>
+                
+                <tr>
+                    <td rowspan="3">Development</td>
+                    <td>HTML</td>
+                    <td>R$ 1.000</td>
+                </tr>
+                <tr>
+                    <td>CSS</td>
+                    <td>R$ 1.000</td>
+                </tr>
+                <tr>
+                    <td>Javascript</td>
+                    <td>R$ 1.000</td>
+                </tr>
+                
+            </tbody>
+            
+        </table>
+    
+    </body>
+
+</html>

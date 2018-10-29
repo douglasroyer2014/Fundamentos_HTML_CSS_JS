@@ -1,0 +1,61 @@
+<!doctype html>
+<!-- doctype informa ao agente do usuario do html que deve ser rederizada-->
+<html lang="pt-br">
+    <head>
+        <title>Pagina de exemplo estrura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Douglas Royer">
+        <meta name="description" content="exemplo de estrutura básica">
+        <meta name="keywords" content="htm5, tecnologia">
+        <style>
+            li ol{
+                height: 0;
+                overflow: hidden;
+                transition: height 10s;
+            }
+            
+            li:hover{
+                background: #ccc;
+            }
+            li:hover ol{
+                height: 50px;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+        <ul>
+            <li>Item 1</li>
+            <li>Item 2
+                <ol>
+                    <li>Item 1</li>
+                    <li>Item2</li>
+                </ol>
+            </li>
+            <li>Item 3</li>
+        </ul>
+        
+        <hr>
+        
+        <dl>
+            <dt>HTML</dt>
+            <dd>HIPERTEXTO</dd>
+            
+            <dt>CSSS</dt>
+            <dd>ESTILO EM CASACATA</dd>
+            
+        </dl>
+
+        <hr>
+        
+        <dl>
+            <dt>Net</dt>
+            <dt>Claro</dt>
+            <dt>Vivo</dt>
+            <dd>Operadoras</dd>
+        </dl>
+        
+    </body>
+
+</html>
