@@ -1,0 +1,88 @@
+<!doctype html>
+<!-- doctype informa ao agente do usuario do html que deve ser rederizada-->
+<html lang="pt-br">
+    <head>
+        <title>Pagina de exemplo estrura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Douglas Royer">
+        <meta name="description" content="exemplo de estrutura básica">
+        <meta name="keywords" content="htm5, tecnologia">
+        <style>
+
+            input[type="checkbox"]{
+                width: 100px;
+                height: 100px;
+            }
+
+            input[type="checkbox"]:checked{
+            
+                height: 50px;
+            }
+            
+            button:disabled{
+                background: red;
+            }
+            
+            p{
+                color:red;
+            }
+            
+            p:empty:before{
+                content: "vasf paragrafo vazio";
+            }
+            
+            input[type="text"]:focus{
+                background: #ccc;
+            }
+            
+            a:focus, a:hover, div:focus{
+                background: green;
+            }
+            
+            input::placeholder{
+                color:red;
+            }
+            
+            input[type="text"]:read-only{
+                background: yellow;
+            }
+            
+            
+        </style>
+    </head>
+
+    <body>   
+    
+        <label><input value="sim" type="checkbox">Aceito o contrato</label>
+        <button>vai</button>
+        <button disabled>volta</button>
+        
+        <p>paragrafo 1</p>
+        <p> </p>
+        <p></p>
+        
+        <hr>
+        
+        <input type="text">
+        <input type="text" value="valor inicial">
+        <input type="text" value="valor inicial" readonly>
+        <input type="text" value="valor inicial" disabled>
+        <input type="text" placeholder="valor placeholder">
+        
+        <ul>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+            <li><a href="#">link falso</a></li>
+        </ul>
+        
+        <div tabindex="1">div 1</div>
+        <div tabindex="2">div 2</div>
+        <div tabindex="3">div 3</div>
+        
+        
+        
+        
+    </body>
+
+</html>

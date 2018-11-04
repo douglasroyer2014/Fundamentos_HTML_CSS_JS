@@ -1,0 +1,70 @@
+<!doctype html>
+<!-- doctype informa ao agente do usuario do html que deve ser rederizada-->
+<html lang="pt-br">
+    <head>
+        <title>Pagina de exemplo estrura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Douglas Royer">
+        <meta name="description" content="exemplo de estrutura básica">
+        <meta name="keywords" content="htm5, tecnologia">
+        <meta name="viewport" content="width=device-width">
+        <style>
+            body{
+                font-family: serif;
+                background: orange;
+                margin: 0;
+                font-size: 16px;
+            }
+            
+            .teste{
+                background: red;
+                width: 320px;
+                height: 50px;
+            }
+            
+            .container{
+                background: #fff;
+                padding: 15px;
+                font-size: 24px;
+            }
+            
+            .container div{
+                background: #ccc;
+                margin-bottom: 15px;
+                height: 150px;
+            }
+            
+            .clearfix::after{
+                content: ' ';
+                display: block;
+                clear: both;
+            }
+            
+            @media screen and (min-width: 400px){
+                body{
+                    background: yellow;
+                }
+                
+                .container div{
+                    margin: 10px;
+                    width: calc(50% - 30px);
+                    float: left;
+                }
+            }
+            
+        </style>
+    </head>
+
+    <body>   
+        <h1>Ememplo de media queries</h1>
+        <p>Paragragro qualquer</p>
+        
+        <!--<div class="teste"></div>-->
+        
+        <div class="container clearfix">
+            <div>div 1</div>
+            <div>div 2</div>
+        </div>
+    </body>
+
+</html>

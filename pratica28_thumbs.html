@@ -1,0 +1,103 @@
+<!doctype html>
+<!-- doctype informa ao agente do usuario do html que deve ser rederizada-->
+<html lang="pt-br">
+    <head>
+        <title>Pagina de exemplo estrura basica</title>
+        <meta charset="utf-8">
+        <meta name="author" content="Douglas Royer">
+        <meta name="description" content="exemplo de estrutura básica">
+        <meta name="keywords" content="htm5, tecnologia">
+        <style>
+           
+            a{
+                display: block;
+                margin: 10px;
+                position: relative;
+            }
+            
+            a img{
+                width: 100%;
+                display: block;
+            }
+
+            a:before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                transition: all 2s;
+            
+            }
+            
+            a:hover:before{
+                background: rgba(0, 0, 0, .5);
+            }
+            
+            a:after{
+                opacity: 0;
+            }
+            
+            a:hover:after{
+                content: 'veja';
+                display: block;
+                position: absolute;
+                border: 3px solid #fff;
+                color: #fff;
+                top: 50%;
+                left: 50%;
+                padding: 5px;
+                transform: translate(-50%, -50%);
+                opacity: 1;
+                border-radius: 40px
+            }
+            
+            body{
+                font-family: sans-serif;
+            }
+            
+        </style>
+    </head>
+
+    <body>   
+    
+        
+        
+        <section>
+            <article>
+                <a href="#">
+                    <img src="projetoStrata/images/thumbs/01.jpg" alt="">
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="projetoStrata/images/thumbs/02.jpg" alt="">
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="projetoStrata/images/thumbs/03.jpg" alt="">
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="projetoStrata/images/thumbs/04.jpg" alt="">
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="projetoStrata/images/thumbs/05.jpg" alt="">
+                </a>
+            </article>
+            <article>
+                <a href="#">
+                    <img src="projetoStrata/images/thumbs/06.jpg" alt="">
+                </a>
+            </article>
+        
+        </section>
+    
+    </body>
+
+</html>
